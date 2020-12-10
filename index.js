@@ -1,6 +1,6 @@
 require('dotenv').config();
 console.log(process.env.TOKEN)
-import { Client } from 'discord.js';
+import 'discord.js';
 const sidecause = new Client();
 const TOKEN = process.env.TOKEN
 
