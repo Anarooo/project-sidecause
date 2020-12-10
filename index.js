@@ -1,4 +1,4 @@
-require('dotenv').config({ path: require('find-config')('.env') });
+require('dotenv').config();
 console.log(process.env.TOKEN)
 const Discord = require('discord.js');
 const sidecause = new Discord.Client();
