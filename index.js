@@ -1,4 +1,4 @@
-require('dotenv').config("process.env");
+require('dotenv').config("process");
 console.log(process.env.TOKEN)
 const Discord = require('discord.js');
 const sidecause = new Discord.Client();
