@@ -9,3 +9,11 @@ sidecause.once('ready', () => {
 });
 
 sidecause.login(TOKEN)
+
+sidecause.on('message', message => {
+    console.log(message.content)
+});
+
+if (message.content === '`ping'){
+    message.channel.send('Pong.');
+}
