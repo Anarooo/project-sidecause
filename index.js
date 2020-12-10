@@ -8,8 +8,6 @@ sidecause.once('ready', () => {
     console.log('Ready!');
 });
 
-sidecause.login(TOKEN)
-
 sidecause.on('message', message => {
     console.log(message.content)
 });
@@ -17,3 +15,5 @@ sidecause.on('message', message => {
 if (message.content === '`ping'){
     message.channel.send('Pong.');
 }
+
+sidecause.login(TOKEN)
