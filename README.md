@@ -8,3 +8,5 @@ Required Libraries have been included in the main Branch to allow for portabilit
 DISCLAIMER: The Copyright Holder of this project shall not be Liable in any way for end-users or re-distributors (Anyone who uses this project partially or in full) failing to comply with license terms of included libraries.
 
 Project: Sidecause is a Discord Bot Project started by Alexander Meade to both create a well-functioning Discord Bot and also improve on JavaScript Skills at the same time.
+
+a
