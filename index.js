@@ -12,10 +12,10 @@ sidecause.once('ready', () => {
 
 sidecause.on('message', message => {
     console.log(message.content);
-    if (message.content === '${prefix}ping'){
+    if (message.content === `${prefix}ping`){
         message.channel.send('Pong.');
     }
-    else if (message.content === '${secret_code}'){
+    else if (message.content === `${secret_code}`){
         message.channel.send('Very Poggers!!! You found secret code!!! Haha 69 funny sex number...')
     }
 });
