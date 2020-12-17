@@ -3,7 +3,7 @@ console.log(process.env.TOKEN)
 const Discord = require('discord.js');
 const sidecause = new Discord.Client();
 const TOKEN = process.env.TOKEN
-const prefix = require('./config.json');
+const config = require('./config.json');
 
 
 sidecause.once('ready', () => {
@@ -15,7 +15,7 @@ sidecause.on('message', message => {
     if (message.content === '${prefix}ping'){
         message.channel.send('Pong.');
     }
-    else if (message.content === '${prefix}{secret_codes}'){
+    else if (message.content === '${secret_code}'){
         message.channel.send('Very Poggers!!! You found secret code!!! Haha 69 funny sex number...')
     }
 });
