@@ -20,6 +20,21 @@ sidecause.once('ready', () => {
 
 sidecause.on('message', message => {
     console.log(message.content);
+
+    if (!message.content.startsWith(prefix) || message.author.bot) return;
+
+    const args = message.content.slice(prefix.length).trim().split(/ +/);
+    const commands = args.shift().toLowerCase();
+
+    if (!sidecause.commands.has(command)) return;
+
+    try { 
+        clientInformation.commands.get(command).execute(message,args);
+    } catch (error) {
+        console.error(error);
+        message.reply('The bot encountered an error trying to execute the command. Please create a bug report if the issue occurs.')
+    }
+    
 });
 
 sidecause.login(TOKEN)
