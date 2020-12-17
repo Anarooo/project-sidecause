@@ -16,7 +16,7 @@ sidecause.on('message', message => {
         message.channel.send('Pong.');
     }
     else if (message.content === `${secret_code}`){
-        message.channel.send('Very Poggers!!! You found secret code!!! Haha 69 funny sex number...')
+        message.channel.send('Secret Code Works')
     }
 });
 
