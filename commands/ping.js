@@ -2,6 +2,6 @@ module.exports = {
     name: 'ping',
     description: 'Pong!',
     execute(message, args) {
-        message.channel.send(`Pong! [Ping is: ${Math.round(sidecause.ping)}ms]`);
+        message.channel.send(`Pong! [Ping is: ${Math.round(client.ping)}ms]`);
     },
 };
