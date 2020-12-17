@@ -23,7 +23,6 @@ sidecause.once('ready', () => {
 });
 
 sidecause.on('message', message => {
-    console.log(message.content);
 
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
