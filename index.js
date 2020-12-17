@@ -3,7 +3,7 @@ console.log(process.env.TOKEN)
 const Discord = require('discord.js');
 const sidecause = new Discord.Client();
 const TOKEN = process.env.TOKEN
-const config = require('./config.json');
+const { prefix, secret_code } = require('./config.json');
 
 
 sidecause.once('ready', () => {
