@@ -33,7 +33,7 @@ sidecause.on('message', message => {
     if (!sidecause.commands.has(command)) return;
 
     try { 
-        clientInformation.commands.get(command).execute(message,args);
+        clientInformation.commands.get(command).execute(message, args);
     } catch (error) {
         console.error(error);
         message.reply('The bot encountered an error trying to execute the command. Please create a bug report if the issue occurs.')
