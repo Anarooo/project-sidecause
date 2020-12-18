@@ -9,7 +9,7 @@ module.exports = {
                     kickReason = args.join(" ").slice(22);
                     let {guild} = message
                     kickedUser.send(`You were kicked from ${guild.name}`)
-                    kickedUser.kick("Kicked by Command")
+                    message.mentions.users.first().kick("Kicked by Command")
                 } catch {
                     message.reply(`I do not have permission to kick ${kickedUser}`)}
                 }else {
