@@ -8,7 +8,7 @@ module.exports = {
                 try {
                     let {guild} = message
                     kickedUser.send(`You were kicked from ${guild.name}`)
-                    message.mentions.users.first().kick("Kicked by Command");
+                    kickedUser.kick("Kicked by Command");
                 } catch {
                     message.reply(`I do not have permission to kick ${kickedUser}`)}
                 }else {
