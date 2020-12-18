@@ -1,4 +1,4 @@
-# Project: Sidecause (Codename: ubiquitous-adventure)
+# Dreamstate (Project: Sidecause)
 
 Copyright (c) 2020 Alexander Meade
 
