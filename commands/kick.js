@@ -3,10 +3,9 @@ module.exports = {
     description: 'Kick a user',
     execute(message, args) {
         if (message.member.hasPermission("KICK_MEMBERS")) {
-            const kickedUser = message.mentions.users.first()
+            const kickedUser = message.mentions.members.first()
             if (message.mentions.users.first()) {
                 try {
-                    kickReason = args.join(" ").slice(22);
                     let {guild} = message
                     kickedUser.send(`You were kicked from ${guild.name}`)
                     message.mentions.users.first().kick("Kicked by Command");
