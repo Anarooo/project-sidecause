@@ -11,7 +11,7 @@ module.exports = {
             kickReason = "No Reason Provided"
         }
         let {guild} = message
-        message.User.send(`You were kicked from ${guild.name} for ${kickReason}`)
+        User.send(`You were kicked from ${guild.name} for ${kickReason}`)
         User.kick({reason: kickReason})
     },
 };
