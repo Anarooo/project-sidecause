@@ -4,7 +4,7 @@ module.exports = {
     execute(message, args) {
         if (message.member.hasPermission("KICK_MEMBERS")) {
             const kickedUser = message.mentions.users.first()
-            if (kickedUser) {
+            if (message.mentions.users.first()) {
                 try {
                     kickReason = args.join(" ").slice(22);
                     let {guild} = message
