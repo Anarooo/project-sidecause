@@ -9,8 +9,9 @@ module.exports = {
                 try {
                     let {guild} = message
                     message.mentions.users.first().send(`You were banned from ${guild.name} by ${banOperator}.`)
+                    console.log(`${bannedUser.displayName} was banned by ${banOperator}`)
                     setTimeout(() => {
-                        bannedUser.ban("User was banned by", + banOperator);
+                        bannedUser.ban("User was banned, see console for more information...");
                     }, 2000);
                     
                 } catch {
