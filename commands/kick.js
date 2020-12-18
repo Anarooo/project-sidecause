@@ -3,7 +3,7 @@ module.exports = {
     description: 'Kick a user',
     execute(message, args) {
         if (message.member.hasPermission("KICK_MEMBERS")) {
-            const kickedUser = message.members.mentions.first()
+            const kickedUser = message.mentions.users.first()
             if (kickedUser) {
                 try {
                     kickReason = args.join(" ").slice(22);
