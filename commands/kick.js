@@ -10,8 +10,11 @@ module.exports = {
                     let {guild} = message
                     kickedUser.user.send(`You were kicked from ${guild.name} for ${kickReason}`)
                     kickedUser.kick({reason: kickReason})
-                }
+                } catch {
+                    message.reply(`I do not have permission to kick ${kickedUser}`)}
+                }else {
+                    message.reply(`You do not have permissions to kick ${kickedUser}`)
             }
         }
-    },
+    }
 };
