@@ -4,7 +4,7 @@ module.exports = {
     execute(message, args) {
         if (message.member.hasPermission("BAN_USERS")) {
             const bannedUser = message.mentions.members.first()
-            const banOperator = message.member()
+            const banOperator = message.member.displayName
             if (message.mentions.users.first()) {
                 try {
                     let {guild} = message
