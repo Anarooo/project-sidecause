@@ -12,7 +12,6 @@ module.exports = {
                     kickedUser.kick({reason: kickReason})
                 } catch {
                     message.reply(`I do not have permission to kick ${kickedUser}`)}
-                    console.log(error)
                 }else {
                     message.reply(`You do not have permissions to kick ${kickedUser}`)
             }
