@@ -8,9 +8,9 @@ module.exports = {
             if (message.mentions.users.first()) {
                 try {
                     let {guild} = message
-                    message.mentions.users.first().send(`You were banned from ${guild.name} by ${banOperator.name}.`)
+                    message.mentions.users.first().send(`You were banned from ${guild.name} by ${banOperator}.`)
                     setTimeout(() => {
-                        bannedUser.ban(`User was banned by ${banOperator.name}`);
+                        bannedUser.ban(`User was banned by ${banOperator}`);
                     }, 2000);
                     
                 } catch {
